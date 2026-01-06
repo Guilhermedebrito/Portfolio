@@ -167,8 +167,7 @@ header {
     width: 100vw;
     height: 350px;
     background: #E2C044;
-        display: flex;
-        justify-content: space-between;
+        
     }
         .text {
             width: 800px;
@@ -177,8 +176,8 @@ header {
         .meu-nome {
             font-size: 30px;
             color: #0d1d74;
-    padding-top: 80px;
-    padding-left: 40px;
+            padding-top: 80px;
+                padding-left: 40px;
 }
 @media (max-width: 748px) {
     .meu-nome {
@@ -207,15 +206,35 @@ header {
     height: 25px;
     border-radius: 12px;
 }
-.image img {
-    max-width: 20%;
-    border-radius: 100px;
-    margin-top: 20px;
-    margin-left: 33%;
+/* Section 2*/
+
+.quem-sou-eu {
+    color: #fff;
+    background-color: #0d1d74;
+    padding-left: 2%;
+    height: 450px;
+
+    h2 {
+        padding-top: 10px;
+    }
+
+    .text {
+        width: 700px;
+        margin: auto;
+        text-align: center;
+        position: absolute;
+        top: 55vh;
+        left: 30vw;
+    }
+}
+
+.image {
+    max-width: 7%;
+    border: #fff solid;
 }
 
 @media (max-width: 1000px) {
     .image {
-        max-width: 70%;
+        max-width: 15%;
     }
 }
