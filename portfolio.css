@@ -6,16 +6,18 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+html {
+    width: 100vw;
+}
 header {
     color: #ffffff;
     height: 60px;
     display: flex;
     justify-content: space-between;
-    width: 100%;
-    background: rgb(7, 7, 29);
-    padding-inline: 16px;
+    width: 100vw;
+        background: #0d1d74;
 
-    h2 {
+        h2 {
         padding-left: 10%;
         font-family: Arial, Helvetica, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         font-size: 15px;
@@ -35,7 +37,7 @@ header {
 .nav {
     max-width: 1280px;
     height: 60px;
-    margin-inline: 70px;
+    margin-inline: 200px;
 
     display: flex;
     justify-content: space-between;
@@ -162,25 +164,37 @@ header {
 /* section 1*/
 
 .information {
+    width: 100vw;
     height: 350px;
-    background: center / cover no-repeat url("media/bg-section.jpg")
-}
-
-.information h1 {
-    color: #1a7dff;
+    background: #E2C044;
+        display: flex;
+        justify-content: space-between;
+    }
+        .text {
+            width: 800px;
+        }
+    
+        .meu-nome {
+            font-size: 30px;
+            color: #0d1d74;
     padding-top: 80px;
     padding-left: 40px;
 }
+@media (max-width: 748px) {
+    .meu-nome {
+        font-size: 25px;
+    }
+}
 .information h4 {
     color: #fff;
-    font-weight: 400;
     padding-top: 4px;
     padding-left: 40px;
+    
 }
 
 .information  a {
     color: #fff;
-    background: #1a7dff;
+    background: #0d1d74;
     text-decoration: none;
     font-size: 12px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -192,4 +206,16 @@ header {
     width: 100px;
     height: 25px;
     border-radius: 12px;
+}
+.image img {
+    max-width: 20%;
+    border-radius: 100px;
+    margin-top: 20px;
+    margin-left: 33%;
+}
+
+@media (max-width: 1000px) {
+    .image {
+        max-width: 70%;
+    }
 }
